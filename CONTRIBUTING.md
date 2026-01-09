@@ -41,7 +41,7 @@ Before creating an issue, please:
 ### Installation
 
 ```bash
-git clone https://github.com/pinojs/pino-debugger.git
+git clone https://github.com/alphacointech1010/pino-debugger.git
 cd pino-debugger
 npm install
 ```
