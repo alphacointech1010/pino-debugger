@@ -1,0 +1,72 @@
+{
+  "name": "pino-debugger",
+  "version": "1.0.0",
+  "description": "High performance debug logging",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run deps && npm run lint && npm run test:unit",
+    "deps": "knip --production --dependencies",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "test:unit": "cross-env NODE_ENV=test borp",
+    "test:watch": "cross-env NODE_ENV=test node --watch --test",
+    "test:with-debug": "npm i --no-save --no-audit --no-fund debug@$DEBUG_VERSION && npm run test:unit -- --after scripts/npmi",
+    "test-2.3": "cross-env DEBUG_VERSION=2.3 npm run test:with-debug",
+    "test-2.4": "cross-env DEBUG_VERSION=2.4 npm run test:with-debug",
+    "test-2.5": "cross-env DEBUG_VERSION=2.5 npm run test:with-debug",
+    "test-2.6": "cross-env DEBUG_VERSION=2.6 npm run test:with-debug",
+    "test-3.1": "cross-env DEBUG_VERSION=3.1 npm run test:with-debug",
+    "test-4.1": "cross-env DEBUG_VERSION=4.1 npm run test:with-debug",
+    "test-all": "npm run test-2.3 && npm run test-2.4 && npm run test-2.5 && npm run test-2.6 && npm run test-3.1 && npm run test-4.1",
+    "ci": "npm test",
+    "bench": "node benchmarks/runbench all",
+    "bench-basic": "node benchmarks/runbench basic",
+    "bench-object": "node benchmarks/runbench object",
+    "bench-deepobject": "node benchmarks/runbench deepobject",
+    "security:audit": "npm audit --audit-level=moderate",
+    "security:fix": "npm audit fix",
+    "security:snyk": "snyk test",
+    "security:check": "npm run security:audit && npm run security:snyk",
+    "security:validate": "node scripts/security-check.js",
+    "prepare": "npm run security:audit"
+  },
+  "repository": "pinojs/pino-debugger",
+  "keywords": [
+    "pino",
+    "debug",
+    "fast",
+    "performance",
+    "debugging",
+    "logging",
+    "logger",
+    "security",
+    "production-ready",
+    "logfmt"
+  ],
+  "license": "MIT",
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/pino"
+  },
+  "security": {
+    "policy": "https://github.com/alphacointech1010/pino-debugger/security/policy",
+    "contact": "security@pinojs.io"
+  },
+  "dependencies": {
+    "pino": "^10.1.0",
+    "debug-fmt": "^1.0.0"
+  },
+  "devDependencies": {
+    "borp": "^0.21.0",
+    "cross-env": "^7.0.3",
+    "debug": "^4.4.3",
+    "eslint": "^9.38.0",
+    "fastbench": "^1.0.1",
+    "knip": "^5.1.2",
+    "neostandard": "^0.12.2",
+    "pump": "^3.0.0",
+    "split2": "^4.2.0",
+    "steed": "^1.1.3",
+    "through2": "^4.0.2"
+  }
+}
