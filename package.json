@@ -30,7 +30,7 @@
     "security:validate": "node scripts/security-check.js",
     "prepare": "npm run security:audit"
   },
-  "repository": "pinojs/pino-debugger",
+  "repository": "alphacointech1010/pino-debugger",
   "keywords": [
     "pino",
     "debug",
@@ -50,7 +50,7 @@
   },
   "security": {
     "policy": "https://github.com/alphacointech1010/pino-debugger/security/policy",
-    "contact": "security@pinojs.io"
+    "contact": "security@alphacointech1010.io"
   },
   "dependencies": {
     "pino": "^10.1.0",

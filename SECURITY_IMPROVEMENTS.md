@@ -129,7 +129,7 @@ This document outlines the security improvements made to pino-debugger to enhanc
 
 ## 📞 Security Contacts
 
-- **Primary**: security@pinojs.io
+- **Primary**: security@alphacointech1010.io
 - **Backup**: Maintainers listed in package.json
 - **Emergency**: GitHub security advisories
 

@@ -213,10 +213,10 @@ Sponsored by [nearForm](http://tldrlegal.com/license/mit-license)
 [1]: https://nodejs.org/api/documentation.html#documentation_stability_index
 [2]: https://img.shields.io/npm/v/pino-debugger.svg?style=flat-square
 [3]: https://npmjs.org/package/pino-debugger
-[4]: https://img.shields.io/github/actions/workflow/status/pinojs/pino-debugger/ci.yml?style=flat-square
+[4]: https://img.shields.io/github/actions/workflow/status/alphacointech1010/pino-debugger/ci.yml?style=flat-square
 [5]: https://github.com/alphacointech1010/pino-debugger/actions?query=workflow%3ACI+branch%3Amaster
-[6]: https://img.shields.io/codecov/c/github/pinojs/pino-debugger/master.svg?style=flat-square
-[7]: https://codecov.io/github/pinojs/pino-debugger
+[6]: https://img.shields.io/codecov/c/github/alphacointech1010/pino-debugger/master.svg?style=flat-square
+[7]: https://codecov.io/github/alphacointech1010/pino-debugger
 [8]: http://img.shields.io/npm/dm/pino-debugger.svg?style=flat-square
 [9]: https://npmjs.org/package/pino-debugger
 [10]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square

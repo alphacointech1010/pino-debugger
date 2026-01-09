@@ -18,7 +18,7 @@ We take security vulnerabilities seriously. If you discover a security vulnerabi
 ### How to Report
 
 1. **Do NOT** create a public GitHub issue for security vulnerabilities
-2. Send an email to the maintainers at: security@pinojs.io
+2. Send an email to the maintainers at: security@alphacointech1010.io
 3. Include the following information:
    - Description of the vulnerability
    - Steps to reproduce the issue
@@ -60,7 +60,7 @@ When using pino-debugger:
 
 ## Security Contacts
 
-- Primary: security@pinojs.io
+- Primary: security@alphacointech1010.io
 - Backup: maintainers listed in package.json
 
 Thank you for helping keep pino-debugger secure!
