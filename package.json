@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "pino": "^10.1.0",
-    "debug-fmt": "^1.0.0"
+    "debug-fmt": "^1.0.1"
   },
   "devDependencies": {
     "borp": "^0.21.0",
