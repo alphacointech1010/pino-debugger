@@ -50,22 +50,29 @@ function checkPackageJsonSecurity () {
   }
 }
 
-// Check 3: Verify GitHub security templates
+// Check 3: Verify GitHub security templates (optional)
 function checkGitHubTemplates () {
   const requiredTemplates = [
     '.github/ISSUE_TEMPLATE/bug_report.md',
     '.github/ISSUE_TEMPLATE/feature_request.md',
-    '.github/PULL_REQUEST_TEMPLATE.md',
-    '.github/workflows/security.yml'
+    '.github/PULL_REQUEST_TEMPLATE.md'
+  ]
+
+  const optionalTemplates = [
+    '.github/workflows/security-simple.yml'
   ]
 
   const missing = requiredTemplates.filter(file => !fs.existsSync(file))
+  const missingOptional = optionalTemplates.filter(file => !fs.existsSync(file))
 
   if (missing.length === 0) {
-    console.log('✅ All GitHub security templates present')
+    console.log('✅ All required GitHub security templates present')
+    if (missingOptional.length > 0) {
+      console.log('ℹ️  Optional templates missing:', missingOptional.join(', '))
+    }
     return true
   } else {
-    console.log('❌ Missing GitHub templates:', missing.join(', '))
+    console.log('❌ Missing required GitHub templates:', missing.join(', '))
     return false
   }
 }

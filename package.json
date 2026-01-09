@@ -10,7 +10,7 @@
     "lint:fix": "eslint --fix",
     "test:unit": "cross-env NODE_ENV=test borp",
     "test:watch": "cross-env NODE_ENV=test node --watch --test",
-    "test:with-debug": "npm i --no-save --no-audit --no-fund debug@$DEBUG_VERSION && npm run test:unit -- --after scripts/npmi",
+    "test:with-debug": "npm i --no-save --no-audit --no-fund debug@$DEBUG_VERSION && npm run test:unit",
     "test-2.3": "cross-env DEBUG_VERSION=2.3 npm run test:with-debug",
     "test-2.4": "cross-env DEBUG_VERSION=2.4 npm run test:with-debug",
     "test-2.5": "cross-env DEBUG_VERSION=2.5 npm run test:with-debug",
@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "pino": "^10.1.0",
-    "debug-fmt": "^1.0.1"
+    "debug-fmt": "^1.0.2"
   },
   "devDependencies": {
     "borp": "^0.21.0",

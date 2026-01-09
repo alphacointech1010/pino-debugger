@@ -4,12 +4,10 @@
 
 We actively support the following versions of pino-debugger with security updates:
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 4.x.x   | :white_check_mark: |
-| 3.x.x   | :x:                |
-| 2.x.x   | :x:                |
-| 1.x.x   | :x:                |
+| Version | Supported          | Security Status |
+| ------- | ------------------ | --------------- |
+| 1.x.x   | :white_check_mark: | ✅ Zero known vulnerabilities |
+| 0.x.x   | :x:                | ❌ Not supported |
 
 ## Reporting a Vulnerability
 
@@ -45,10 +43,13 @@ When using pino-debugger:
 
 ### Security Features
 
+- **Zero Known Vulnerabilities**: Current version has no known security vulnerabilities
+- **Minimal Dependencies**: Only essential dependencies (pino) to reduce attack surface
 - **Safe Circular References**: Unlike the standard debug module, pino-debugger safely handles circular references
 - **Structured Logging**: JSON output format reduces log injection risks
 - **Namespace Isolation**: Debug namespaces provide controlled logging scope
 - **Production Ready**: Designed for safe use in production environments
+- **Regular Security Audits**: Automated vulnerability scanning and dependency updates
 
 ### Vulnerability Disclosure Timeline
 

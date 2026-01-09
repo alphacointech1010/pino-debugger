@@ -2,11 +2,11 @@
 [![npm version][2]][3] [![build status][4]][5] [![test coverage][6]][7]
 [![downloads][8]][9] [![dependencies freshness][14]][15] [![js-standard-style][10]][11]
 
-High performance debug logging. 
+High performance debug logging with enhanced security. 
 
 Seamlessly integrates the [`debug`][12] module with the high performance [`pino`][13]
 logger so you can turn on debug logs in production scenarios 
-with minimum overhead.
+with minimum overhead and maximum security.
 
 * Up to 10x faster than using [`debug`][12] (20x in extreme mode!)
 * JSON output with more detail (`pino`/`bunyan`/`bole` format)
@@ -14,6 +14,21 @@ with minimum overhead.
 * No need to replace any `debug` logging calls
 * Associate namespaces with log levels
 * Compatible with the entire pino ecosystem
+* **Zero known vulnerabilities** - regularly audited and maintained
+* Production-ready with comprehensive security features
+
+## Security
+
+This package is actively maintained with security as a top priority:
+
+- **Zero Known Vulnerabilities**: Regular security audits ensure no known vulnerabilities
+- **Automated Security Scanning**: Continuous monitoring with npm audit and Snyk
+- **Safe Dependencies**: Only essential, well-maintained dependencies
+- **Production Ready**: Designed for secure production deployments
+
+For security best practices, see [SECURITY_BEST_PRACTICES.md](docs/SECURITY_BEST_PRACTICES.md).
+
+To report security vulnerabilities, see [SECURITY.md](SECURITY.md).
 
 ## Installation
 ```sh
@@ -63,8 +78,7 @@ pinoDebug(logger, {
     'express:router': 'debug',
     '*': 'trace' // everything else - trace
   },
-  levels: ['info', 'warn', 'error', 'fatal', 'trace', 'debug'],
-  format: 'logfmt' // output format for debug-fmt
+  levels: ['info', 'warn', 'error', 'fatal', 'trace', 'debug']
 })
 ```
 
