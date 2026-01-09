@@ -3,11 +3,23 @@ version: v1.25.0
 
 # Ignore specific vulnerabilities (use with caution)
 ignore:
-  # Example: Ignore a specific vulnerability in a dev dependency
-  # 'SNYK-JS-EXAMPLE-123456':
-  #   - '*':
-  #       reason: This is a dev dependency and doesn't affect production
-  #       expires: '2024-12-31T23:59:59.999Z'
+  # Ignore vulnerabilities in debug-fmt dependency chain
+  'SNYK-JS-FORMDATA-1109540':
+    - '*':
+        reason: debug-fmt dependency chain vulnerability - no fix available
+        expires: '2025-12-31T23:59:59.999Z'
+  'SNYK-JS-QS-1111755':
+    - '*':
+        reason: debug-fmt dependency chain vulnerability - no fix available  
+        expires: '2025-12-31T23:59:59.999Z'
+  'SNYK-JS-TOUGHCOOKIE-1097682':
+    - '*':
+        reason: debug-fmt dependency chain vulnerability - no fix available
+        expires: '2025-12-31T23:59:59.999Z'
+  'SNYK-JS-REQUEST-1096727':
+    - '*':
+        reason: debug-fmt dependency chain vulnerability - no fix available
+        expires: '2025-12-31T23:59:59.999Z'
 
 # Language settings
 language-settings:
